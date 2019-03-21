@@ -1,13 +1,14 @@
-$myBorder: 0.8px solid black;
-$myColour:#6197fda6;
+$myBorder: 0.8px solid rgba(85, 78, 78, 0.397);
+$myColour:#3569ca63;
 
 * {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:rgb(240, 240, 240);
 }
 
 body {
     margin:0;
-    background-color: rgb(231, 227, 213);
+    background-color: $myColour;
     font-size:0.8em;
     display:flex;
     justify-content: center;
@@ -33,14 +34,14 @@ form {
         input {
             width:100%;
             height:auto;
-            background-color:rgb(231, 227, 213);
+            background-color:$myColour;
             border:none;
         }
         textarea {
             width:100%;
             height:150px;
             border:none;
-            background-color:rgb(231, 227, 213);
+            background-color:$myColour;
         }
     }
     #submit-button {    
@@ -62,21 +63,22 @@ form {
 .container {
     height:auto;
     display:flex;
+    flex-direction: column-reverse;
     justify-content:space-around;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: center;
     margin-top:200px;
 
     div {
-        width:400px;
-        align-self: flex-start;
+        width:60%;
         display:flex;
         flex-direction: column;
         justify-content: flex-start;
-        border-bottom:0.8px solid black;
+        border-bottom:$myBorder;
 
         h2 {
-            border-bottom:0.8px solid black;
+            border-bottom:$myBorder;
+            padding-bottom: 8px;
         }
 
     }

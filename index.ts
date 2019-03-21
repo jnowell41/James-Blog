@@ -20,19 +20,19 @@ const createBlogPost = () => {
 };
 
 function logPosts() {
+    var umbrellaElement = document.getElementsByClassName("container")[0];
 
     var newTitle = document.createElement("h2");
     var newContent = document.createElement("p");
     var newDate = document.createElement("p");
     var dateFunc = new Date();
     var newDiv = document.createElement("div");
-    var umbrellaElement = document.getElementsByClassName("container")[0];
         
         blogPosts.forEach(element => {
 
         var newContainer = umbrellaElement.appendChild(newDiv);
 
-        newDate.innerHTML = dateFunc.toString();
+        newDate.innerHTML = dateFunc.toLocaleDateString();
         newContainer.insertBefore(newDate, newContainer.childNodes[0]);
 
         newContent.innerHTML=element.content;
@@ -40,5 +40,7 @@ function logPosts() {
 
         newTitle.innerHTML=element.title;
         newContainer.insertBefore(newTitle, newContainer.childNodes[0]);
+
     });
+
 }

@@ -10,6 +10,20 @@
     <script src="main.js"></script>
 </head>
 <body>
-    blah blah blah blah.
+    <nav>
+        <form id="blog-post" onsubmit = "createBlogPost(); return false;">
+            <h1>Blog Post Exercise</h1>
+                <p>
+                    <label for = "blogger-title"></label>
+                    <input type = "text" name ="blogger-title" placeholder="Blog Title"/>
+                </p>
+                <p>
+                    <label for = "blogger-post"></label>
+                    <textarea name = "blogger-post" placeholder="Content"></textarea>
+                    <input id = "submit-button" type = "submit" value = "Submit">
+                </p>
+            </form>
+            </nav>
+    <div class = "container"></div>
 </body>
 </html>

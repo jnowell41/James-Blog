@@ -1,0 +1,13 @@
+{
+  "name": "James-Blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jnowell41/James-Blog.git",
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.17.3"
+  },
+  "devDependencies": {
+    "typescript": "^3.3.4000"
+  }
+}
